@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kaikki mitä ehdokas tarvitsee</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+        <script src="./js/loader.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <!-- Preloader -->
+        <div id="preloader">
+            <div id="status">&nbsp;</div>
+        </div>
+
+        <ul id="slideShow">
+            <li>
+                <div class="slide slide1">
+                    <br>
+                    <center>
+                        <img src="img/logo.png" class="pagelogo" alt="Logo">
+                        <h1 class="pagetitle">VALITTUEHDOKAS.com</h1>
+                        <h1 class="header">Edulliset nettisivut vaaliehdokkaille</h1>
+                    </center>
+                    <i id="startchange"></i>
+                </div>
+            </li>
+            <li>
+                <div class="slide slide2">
+                    <br>
+                    <center>
+                        <img src="img/logo.png" class="pagelogo" alt="Logo">
+                        <h1 class="pagetitle">VALITTUEHDOKAS.com</h1>
+                        <h1 class="header">Laadukkaat ja luotettavat sivut</h1>
+                    </center>
+                </div>
+            </li>
+            <li>
+                <div class="slide slide3">
+                    <br>
+                    <center>
+                        <img src="img/logo.png" class="pagelogo" alt="Logo">
+                        <h1 class="pagetitle">VALITTUEHDOKAS.com</h1>
+                        <h1 class="header">Valitse kokonaan oma tyyli
+                            <br>
+                            ja me teemme loput</h1>
+                    </center>
+                </div>
+            </li>
+        </ul>
+        <div id="sliderNavigation" class="sliderControls row"></div>
+
+        <!-- The menu overlay -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="window.closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="/">Etusivu</a>
+                <a href="/contact">Ota Yhteyttä</a>
+                <a href="/faq">Usein Kysyttyä</a>
+                <a href="https://nyxone.org" target="_blank">Mikä on Nyxone?</a>
+            </div>
+        </div>
+
+        <div class="menubar">
+            <a class='menubtn' onclick="window.openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+            <h5 class="barpagelogo">ValittuEhdokas.com</h5>
+        </div>
+
+        <div class="popupWrapper">
+            <div class="puoluePopup">
+                <div class="container">
+                    <div class="row">
+                        <a class="closePopup">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                    <div class="row">
+                        <h1>Kokoomus</h1>
+                        <div class="row">
+                            <p class="details"></p>
+                        </div>
+                        <div class="row">
+                            <p class="lainaus"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="six columns alignCenter">
+                            <a class="button button-primary demo" href="#" target="_blank">Katso Demo</a>
+                            <br>
+                            <font color="red">Demo voi olla keskeneräinen osalle puolueista!</font>
+                        </div>
+                        <div class="six columns alignCenter">
+                            <a class="button button-primary more" href="#" target="_blank">Tutustu paremmin puolueeseen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <center>
+                <h1>Oletko seuraava valittu ehdokas?</h1>
+            </center>
+            <div class="row">
+                <div class="three columns">
+                    <hr>
+                    <center>
+                        <i class="fa fa-globe fa-5x"></i>
+                        <h5>Omat nettisivut</h5>
+                        <p>Vaalikampanjalle suunniteltu nettisivu</p>
+                    </center>
+                    <hr>
+                </div>
+                <div class="three columns">
+                    <hr>
+                    <center>
+                        <i class="fa fa-line-chart fa-5x"></i>
+                        <h5>Google Analytics</h5>
+                        <p>Google Analytics -kävijäseuranta</p>
+                    </center>
+                    <hr>
+                </div>
+                <div class="three columns">
+                    <hr>
+                    <center>
+                        <i class="fa fa-google fa-5x"></i>
+                        <h5>Hakukoneoptimointi</h5>
+                        <p>Teidän uusi kampanjasivu löytyy Googlesta</p>
+                    </center>
+                    <hr>
+                </div>
+                <div class="three columns">
+                    <hr>
+                    <center>
+                        <i class="fa fa-server fa-5x"></i>
+                        <h5>6kk ylläpito</h5>
+                        <p>Ylläpito puoleksi vuodeksi kuuluu hintaan</p>
+                    </center>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="three columns">
+                    <center>
+                        <i class="fa fa-question-circle fa-5x"></i>
+                        <h5>Tuki</h5>
+                        <p>Täysin maksuton ja ystävällinen tuki palvelu</p>
+                    </center>
+                    <hr>
+                </div>
+                <div class="three columns">
+                    <center>
+                        <i class="fa fa-paint-brush fa-5x"></i>
+                        <h5>Oma tyyli</h5>
+                        <p>Suunnittelet itse minkälainen sivusi tule olemaan</p>
+                    </center>
+                    <hr>
+                </div>
+                <div class="three columns">
+                    <center>
+                        <i class="fa fa-lock fa-5x"></i>
+                        <h5>Turvallinen</h5>
+                        <p>Turvallisempi ratkaisu kampanjanettisivulle</p>
+                    </center>
+                    <hr>
+                </div>
+                <div class="three columns">
+                    <center>
+                        <i class="fa fa-wordpress fa-5x"></i>
+                        <h5>Helppokäytöinen</h5>
+                        <p>Wordpress -sisällönhallintaohjelmisto</p>
+                    </center>
+                    <hr>
+                </div>
+            </div>
+            <div class="row details">
+              <div class="seven columns">
+                <p>Valittuehdokas.com on palvelu, jolla luot ehdokassivut vaivattomasti. Palvelu sisältää kotisivut ja blogin omalla .fi tai .com -päätteisellä domainilla ja omalla disainilla.</p>
+                <p>Voit muokata sivujesi sisältöä helppokäyttöisestä hallintapaneelista, ja voit valita ulkoasun valmiista puolueiden teemoista tai luoda oman kampanjailmeesi - näin voit keskittyä vaalityöhösi kotisivujen sijaan.</p>
+                <p>Käytössäsi on myös tukipalvelu, joka auttaa sinua sivujen käytössä, sekä analytiikkatyökalu, jolla seuraat sivujesi menestystä.</p>
+              </div>
+              <div class="five columns">
+                <img style="width: 100%;" src="http://digitalsynopsis.com/wp-content/uploads/2014/03/how-to-create-a-website-feature-image.jpg" alt="">
+              </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="pricing four columns">
+                        <div class="row">
+                            <h1>Aloitusmaksu</h1>
+                        </div>
+                        <div class="row">
+                            <h3>250 €</h3>
+                            <p>sis. nettisivut, ALV 24% ja ylläpito 6kk</p>
+                        </div>
+                    </div>
+                    <div class="pricing four columns">
+                        <div class="row">
+                            <h1>Ylläpito</h1>
+                        </div>
+                        <div class="row">
+                            <h3>13 € /kk
+                            </h3>
+                            <p>Sisältää .fi tai .com domainin, palvelimen ja sisältöpäivityksiä!</p>
+                        </div>
+                    </div>
+                    <div class="pricing four columns">
+                        <h1>Tuki</h1>
+                        <h3>Ilmainen</h3>
+                    </div>
+                </div>
+            </div>
+            <center>
+                <h1>
+                    Valitse puolue:
+                </h1>
+            </center>
+            <div class="row">
+                <a class="puolue six columns" id="kokoomus">
+                    <img class="puoluelogo" src="img/puoluelogo/kokoomus.jpg" alt="Kokoomus">
+                </a>
+                <a class="puolue six columns" id="rkp">
+                    <img class="puoluelogo" src="img/puoluelogo/rkp.jpg" alt="RKP">
+                </a>
+            </div>
+            <hr>
+            <div class="row">
+                <a class="puolue six columns" id="keskusta">
+                    <img class="puoluelogo" src="img/puoluelogo/keskusta.jpg" alt="Keskusta">
+                </a>
+                <a class="puolue six columns" id="peruss">
+                    <img class="puoluelogo" src="img/puoluelogo/peruss.jpg" alt="Perus-S">
+                </a>
+            </div>
+            <hr>
+            <div class="row">
+                <a class="puolue six columns" id="vihreat">
+                    <img class="puoluelogo" src="img/puoluelogo/vihreat.jpg" alt="Vihreät">
+                </a>
+                <a class="puolue six columns" id="kd">
+                    <img class="puoluelogo" src="img/puoluelogo/kd.jpg" alt="Kristillisdemokraatit">
+                </a>
+            </div>
+            <hr>
+            <div class="row">
+                <a class="puolue six columns" id="sdp">
+                    <img class="puoluelogo" src="img/puoluelogo/sdp.jpg" alt="SDP">
+                </a>
+                <a class="puolue six columns" id="vasemmisto">
+                    <img class="puoluelogo" src="img/puoluelogo/vasemmisto.jpg" alt="Vasemmistoliitto">
+                </a>
+            </div>
+            <hr>
+            <form>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="exampleEmailInput">Etunimi ja sukunimi</label>
+                        <input class="u-full-width" type="email" placeholder="Eetu Ehdokas">
+                    </div>
+                    <div class="four columns">
+                        <label for="exampleEmailInput">Puhelinnumerosi</label>
+                        <input class="u-full-width" type="tel" placeholder="+358 123 123456">
+                    </div>
+                    <div class="four columns">
+                        <label for="exampleEmailInput">Sähköpostisi</label>
+                        <input class="u-full-width" type="email" placeholder="test@mailbox.com">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="six columns">
+                        <label for="reasonForContacting">Miksi otat yhteyttä?</label>
+                        <select class="u-full-width" id="reasonForContacting">
+                            <option value="ehdokas">Olen ehdokas</option>
+                            <option value="puolueenedustaja">Olen puolueen edusja</option>
+                            <option value="vaalikampanja">Johdan vaalikampanjaa</option>
+                            <option value="muu">Muu</option>
+                        </select>
+                    </div>
+                    <div class="six columns">
+                        <label for="reasonForContacting">Mistä puoluesta olet?</label>
+                        <select class="u-full-width" id="reasonForContacting">
+                            <option disabled selected>Valitse...</option>
+                            <option value="kokoomus">Kansallinen Kokoomus</option>
+                            <option value="rkp">RKP / SFP</option>
+                            <option value="keskusta">Suomen Keskusta</option>
+                            <option value="peruss">Perus Suomalaiset</option>
+                            <option value="kd">Kristillisdemokraattit</option>
+                            <option value="sdp">SDP</option>
+                            <option value="vihreat">Vihreät / De Gröna</option>
+                            <option value="vasemmisto">Vasemmistoliitto</option>
+                            <option value="muu">Muu?</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="exampleMessage">Viesti</label>
+                <textarea class="u-full-width" placeholder="Hei…" id="message"></textarea>
+                <input class="button-primary" type="submit" value="Lähetä">
+            </form>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="four columns social">
+                        <a href="#">
+                            <i class="fa fa-facebook-official"></i>
+                        </a>
+                    </div>
+                    <div class="four columns social">
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="four columns social">
+                        <a href="#">
+                            <i class="fa fa-twitter-square"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a class="poweredByNyxone" target="_blank" href="https://nyxone.org"><img src="img/poweredByNyxone.png" alt="Powered By Nyxone"></a>
+        </footer>
+
+        <script src="js/slider.js" charset="utf-8"></script>
+        <script src="js/popover.js" charset="utf-8"></script>
+
+        <script src="js/main.js" charset="utf-8"></script>
+
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-584c4f04bbd82097"></script>
+    </body>
+</html>
